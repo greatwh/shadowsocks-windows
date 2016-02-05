@@ -35,6 +35,7 @@ namespace Shadowsocks.Model
             {
                 var configuration = new StatisticsStrategyConfiguration();
                 Save(configuration);
+                Logging.LogUsefulException(e);
                 return configuration;
             }
             catch (Exception e)
